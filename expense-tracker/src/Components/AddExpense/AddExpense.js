@@ -1,21 +1,37 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 
-const AddExpense = ({ setIsModelOpen, addExpenseToList }) => {
+const AddExpense = ({ setIsModelOpen, addExpenseToList, expenseId }) => {
   const [inputExpense, setInputExpense] = useState({
+    _id: "",
     title: "",
     price: "",
     category: "",
     date: "",
   });
+  useEffect(() => {
+    if (expenseId) {
+      setInputExpense(expenseId);
+    }
+  }, []);
+
+  const createUUID = () => {
+    const id = Date.now().toString(36) + Math.random().toString(36).substr(2);
+    return id;
+  };
   const handleInput = (event, type) => {
-    setInputExpense({ ...inputExpense, [type]: event.target.value });
+    console.log(expenseId);
+    const id = createUUID();
+
+    setInputExpense({ ...inputExpense, [type]: event.target.value, _id: id });
   };
   const addExpense = (inputExpense) => {
-    addExpenseToList(inputExpense);
+    addExpenseToList(inputExpense, expenseId);
   };
+
   return (
     <div>
-      <h1>Add Expense</h1>
+      {expenseId ? <h1>Edit Expense</h1> : <h1>Add Expense</h1>}
+
       <div>
         <input
           required
@@ -64,14 +80,13 @@ const AddExpense = ({ setIsModelOpen, addExpenseToList }) => {
             addExpense(inputExpense);
           }}
         >
-          Add Expense
+          {expenseId ? "Edit Expense" : "Add Expense"}
         </button>
         <button
           onClick={() => {
             setIsModelOpen(false);
           }}
         >
-          {" "}
           Cancel
         </button>
       </div>
