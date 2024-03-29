@@ -1,0 +1,30 @@
+.PaginationCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.PaginationBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 25px;
+  border: none;
+  background-color: #f1f1f1;
+  opacity: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+.PaginationNum {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  height: 40px;
+  width: 40px;
+  border-radius: 8px;
+  background-color: #43967b;
+  color: #ffffff;
+  font-size: 22px;
+  font-weight: 500;
+}

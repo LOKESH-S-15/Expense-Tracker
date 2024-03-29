@@ -1,0 +1,122 @@
+.TransactionsCardCon {
+  display: flex;
+  justify-content: space-between;
+  width: 100%;
+  margin-bottom: 10px;
+  margin-top: 10px;
+  height: 50px;
+}
+.TransactionsCardDetailsCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.TransactionsCardpropertyCon {
+}
+.TransactionsCardIconCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 20px;
+  background-color: #9b9b9b;
+}
+.TransactionsCardTitle {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: #000000;
+}
+.TransactionsCardDate {
+  font-size: 16px;
+  font-weight: 400;
+  margin: 0;
+  color: #9b9b9b;
+}
+.TransactionsCardChangeHandleCon {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 10px;
+}
+.TransactionsCardPrice {
+  font-size: 16px;
+  font-weight: 700;
+  margin: 0;
+  color: #f4bb4a;
+}
+.TransactionsCardDeleteBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #ff3e3e;
+  border: none;
+}
+.TransactionsCardDeleteIcon {
+  width: 34px;
+  height: 34px;
+  color: #ffffff !important;
+}
+.TransactionsCardEditBtn {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 40px;
+  height: 40px;
+  border-radius: 15px;
+  background-color: #f4bb4a;
+  border: none;
+}
+.TransactionsCardEditIcon {
+  width: 22px;
+  height: 22px;
+  color: #ffffff !important;
+}
+.categoryImg {
+  height: 20px !important;
+  width: 20px !important;
+}
+.TransactionsCardColorLine {
+  border-top: 1px solid #3b3b3b;
+  border-radius: 4px;
+  height: 1px;
+  width: 100%;
+}
+@media screen and (max-width: 720px) {
+  .TransactionsCardTitle {
+    font-size: 14px;
+  }
+  .TransactionsCardDate {
+    font-size: 14px;
+  }
+  .categoryImg {
+    height: 18px !important;
+    width: 18px !important;
+  }
+  .TransactionsCardIconCon {
+    width: 34px;
+    height: 34px;
+  }
+  .TransactionsCardDeleteBtn {
+    width: 34px;
+    height: 34px;
+  }
+  .TransactionsCardDeleteIcon {
+    width: 30px;
+    height: 30px;
+  }
+  .TransactionsCardEditBtn {
+    width: 34px;
+    height: 34px;
+  }
+  .TransactionsCardEditIcon {
+    width: 20px;
+    height: 20px;
+    color: #ffffff !important;
+  }
+}

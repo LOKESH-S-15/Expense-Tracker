@@ -1,0 +1,15 @@
+.ExpenseTypeCardCon {
+  display: flex;
+
+  align-items: center;
+  gap: 5px;
+
+  text-align: start;
+}
+.expenseTypeTitle {
+  color: #ffffff;
+  font-size: 12px;
+  font-weight: 400;
+  margin-right: 5px;
+  margin-bottom: 14px;
+}

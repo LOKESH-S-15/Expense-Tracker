@@ -1,0 +1,33 @@
+.expenseModelInputCon {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+}
+.expenseModelInput {
+  height: 40px;
+  width: 60%;
+  padding: 8px;
+  border-radius: 15px;
+  border: none;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.expenseModelAddBtn {
+  height: 40px;
+  width: 40%;
+  border-radius: 15px;
+  border: none;
+  background-color: #f4bb4a;
+  opacity: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
+
+.expenseModelEditBtn {
+  height: 40px;
+  width: 30%;
+  border-radius: 15px;
+  border: none;
+
+  opacity: 1;
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+}
